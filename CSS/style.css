@@ -1,0 +1,158 @@
+/* Fondo general */
+body {
+    background-image: url('../IMG/pngtree-d-rendering-of-a-green-wall-restaurant-or-coffee-shop-design-image_13537362-transformed.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Asegura el flujo de contenido vertical */
+}
+
+/* Header */
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6B8E23; /* Verde oliva más claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px; /* Bordes redondeados del hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Amarillo dorado */
+    color: #333;
+}
+
+/* Contenedor del Formulario */
+.container {
+    flex: 1; /* Permite al contenido ocupar el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el formulario horizontalmente */
+    justify-content: center; /* Centra el formulario verticalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 420px; /* Limitar el tamaño máximo */
+    margin: auto; /* Centrado */
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form label {
+    color: #333; /* Color oscuro para visibilidad */
+    font-weight: bold;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: separate; /* Permite separación de bordes */
+    border-spacing: 0; /* Elimina espacio entre bordes */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin: 20px auto; /* Centrada */
+    overflow: hidden; /* Ocultar bordes que sobresalgan */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Bordes internos */
+    padding: 8px;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: #F5DEB3; /* Color trigo al pasar el cursor */
+}
+
+table th {
+    background-color: #6B8E23; /* Verde oliva claro */
+    color: white;
+}
+
+/* Titulos */
+h1 {
+    
+    margin-bottom: 15px; /* Espaciado inferior */
+    text-align: center; /* Centrado */
+    font-size: 2rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mayor contraste */
+}
+
+/* Botones */
+button {
+    background-color: #556B2F; /* Verde oliva */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD700; /* Amarillo dorado */
+    color: #333;
+}
+
+/* Mensaje de error */
+.alert {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    color: #721c24; /* Texto rojo oscuro */
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #6B8E23; /* Verde oliva oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: auto; /* Empuja el footer hacia el fondo */
+    bottom: 0; /* Alinea al borde inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 10; /* Asegura que el footer esté por encima del contenido */
+}
